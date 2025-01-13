@@ -9,7 +9,7 @@ const DeliveryList = () => {
     // Fetch deliveries from the backend API
     const fetchDeliveries = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/deliveries');
+        const response = await axios.get('https://heliverse-back1.onrender.com/api/deliveries');
         setDeliveries(response.data);
       } catch (error) {
         console.error('Error fetching deliveries:', error);

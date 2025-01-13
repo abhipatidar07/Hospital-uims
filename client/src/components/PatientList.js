@@ -10,7 +10,7 @@ const PatientList = () => {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/patients/getall");
+        const response = await axios.get("https://heliverse-back1.onrender.com/api/patients/getall");
         setPatients(response.data);
       } catch (err) {
         setError(err.response?.data?.message || "Failed to fetch patients");

@@ -25,7 +25,7 @@ const CreatePatientForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:4000/api/patients/create", {
+      const response = await axios.post("https://heliverse-back1.onrender.com/api/patients/create", {
         ...formData,
         diseases: formData.diseases.split(","),
         allergies: formData.allergies.split(","),
