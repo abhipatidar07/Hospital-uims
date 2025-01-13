@@ -25,7 +25,7 @@ const SignupForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/signup', formData);
+      const response = await axios.post('https://heliverse-back1.onrender.com/api/auth/signup', formData);
       const user = response.data.user; // Assuming the API response contains the user object
       const token = response.data.token; // Assuming the API response contains the token
 
